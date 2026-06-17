@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hana Coffee Shop</title>
+    <style>
+        /* --- CSS STYLES --- */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #f5f0e6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(45deg, #6f4e37, #3e2723);
+            text-align: center;
+            padding: 25px;
+        }
+
+        h1 {
+            color: white; 
+            margin: 0;
+        }
+
+        nav {
+            background-color: rgb(139, 112, 112);
+            padding: 15px;
+        }
+
+        .NAVCOFFEE {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .NAVCOFFEE li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            transition: 0.3s;
+        }
+
+        .NAVCOFFEE li a:hover {
+            background-color: #6f4e37;
+            border-radius: 5px;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #6f4e37;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3e2723;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #6f4e37;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: right;
+            background-color: #2c2c2c;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>WELCOME TO HANA COFFEE</h1>
+    </header>
+
+    <nav>
+        <ul class="NAVCOFFEE">
+            <li><a href="#choose-coffee">choose your favorite</a></li>
+            <li><a href="#other-coffee">other lists</a></li>
+            <li><a href="#order-choose">order</a></li>
+            <li><a href="#to-buy">buy</a></li>
+            <li><a href="#rate">rate</a></li>
+            <li><a href="#location">location</a></li>
+            <li><a href="#contact-manager">contact the manager</a></li>
+        </ul>
+    </nav>
+
+    <section id="choose-coffee">
+        <h2>Menu</h2>
+        <ol type="i">
+            <li>Ethiopian normal coffee</li>
+            <li>macchiato</li>
+            <li>milk</li>
+            <li>tea</li>
+            <li>sprite</li>
+        </ol>
+    </section>
+
+    <section id="other-coffee">
+        <h2>Menu for Juice</h2>
+        <ul type="1">
+            <li>mango juice</li>
+            <li>avocado juice</li>
+            <li>sprite juice</li>
+            <li>pineapple juice</li>
+            <li>strawberry juice</li>
+        </ul>
+
+        <h2>Menu for Others</h2>
+        <ul type="1">
+            <li>special pizza</li>
+            <li>burger</li>
+        </ul>
+    </section>
+
+    <section id="order-choose">
+        <h2>Order Your Choice</h2>
+        <p>To order your choice press 1</p>
+        <button>1</button>
+    </section>
+
+    <section id="to-buy">
+        <p>Use your choice to buy</p>
+        <table border="1">
+            <tr>
+                <th>Name of Bank</th>
+                <th>Account Number</th>
+            </tr>
+            <tr>
+                <td>CBE</td>
+                <td>1000689014732</td>
+            </tr>
+            <tr>
+                <td>Abyssinia Bank</td>
+                <td>235186397365</td>
+            </tr>
+            <tr>
+                <td>Buna Bank</td>
+                <td>1573659876</td>
+            </tr>
+            <tr>
+                <td>Telebirr</td>
+                <td>0928262023</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="rate">
+        <p><b>Rating</b></p>
+        <form>
+            <label>Your Name:</label><br>
+            <input type="text"><br>
+
+            <label>Rate our website</label>
+            <select>
+                <option>Excellent</option>
+                <option>Very good</option>
+                <option>Good</option>
+                <option>Fair</option>
+                <option>Poor</option>
+            </select><br>
+
+            <button type="submit">submit our rating</button>
+        </form>
+    </section>
+
+    <section id="location">
+        <p><b>Our Location</b></p>
+        <h3>Bahir Dar Kebele 14, Selam Mall Ground Floor</h3><br>
+        <p>@Hanni1927: telegram username</p>
+        <p>0928262023</p>
+        <p>@han1927: username of Instagram</p>
+        <p>@hanni1927: username of TikTok</p>
+    </section>
+
+    <section id="contact-manager">
+        <h3>Contact Manager</h3>
+        <p>@hancoff1927: telegram</p>
+    </section>
+
+    <footer>
+        <p>Created by Hana Nigussie<br><br>2026 GC</p><br><br>
+        <p>THANK YOU</p>
+    </footer>
+
+</body>
+</html>
